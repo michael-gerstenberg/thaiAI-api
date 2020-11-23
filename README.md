@@ -18,3 +18,14 @@ content-type: application/json
     "text": "เวลาหลังเที่ยงคืนถึงเที่ยงวัน"
 }
 ```
+
+## Contact
+
+Michael - michael@thaiai.de
+
+Robin - robin@thaiai.de
+
+
+## Acknowledgements
+
+* [thai language toolkit](https://pypi.org/project/tltk/)
