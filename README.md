@@ -23,7 +23,7 @@
    ```
 4. setup daemon (refresh supvervisord config)
    ```sh
-   $ supervisorctl restart flask
+   $ supervisorctl reread flask
    $ supervisorctl update
    ```
 
