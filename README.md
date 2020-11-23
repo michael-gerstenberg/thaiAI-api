@@ -7,6 +7,9 @@
 ## Deployed on uberspace
 
 1. clone repo
+   ```sh
+   $ git clone https://github.com/michael-gerstenberg/thaiAI-api.git
+   ```
 2. setup and activate python environment, install required packages
    ```sh
    $ virtualenv -p python3 ENV
