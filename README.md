@@ -1,5 +1,9 @@
 # thaiAI-api
 
+## General information
+
+Output based on (tltk)[https://pypi.org/project/tltk/]
+
 ## Deployed on uberspace
 
 to restart service `supervisorctl restart flask`
