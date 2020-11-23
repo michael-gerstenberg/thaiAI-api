@@ -11,7 +11,7 @@
    ```sh
    $ virtualenv -p python3 ENV
    $ source ENV/bin/activate
-   $ pip install Click==7.0 Flask==1.1.1 itsdangerous==1.1.0 Jinja2==2.10.3 MarkupSafe==1.1.1 uWSGI==2.0.18 Werkzeug==0.16.0
+   $ pip install requirements.txt
    ```
 3. set port in nginx
    ```sh
