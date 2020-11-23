@@ -21,7 +21,13 @@
    ```sh
    $ uberspace web backend set / --http --port 1024
    ```
-4. setup daemon (refresh supvervisord config)
+4. create ```~/etc/services.d/flask.ini```
+   ```sh
+   [program:flask]
+   directory=%(ENV_HOME)s/thaiAI-api
+   command=%(ENV_HOME)s/thaiAI-api/ENV/bin/uwsgi uwsgi.ini
+   ```
+5. setup daemon (refresh supvervisord config)
    ```sh
    $ supervisorctl reread flask
    $ supervisorctl update
