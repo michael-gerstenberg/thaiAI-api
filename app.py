@@ -9,6 +9,11 @@ from flask_json import json_response
 app = Flask(__name__)
 
 
+
+####
+# Info
+# supervisorctl restart flask
+
 @app.route("/")
 def index():
   message = "Hello thomas from project_name"
