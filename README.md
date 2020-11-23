@@ -12,6 +12,7 @@
    ```
 2. setup and activate python environment, install required packages
    ```sh
+   $ cd thaiAI-api
    $ virtualenv -p python3 ENV
    $ source ENV/bin/activate
    $ pip install -r requirements.txt
