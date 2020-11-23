@@ -2,7 +2,7 @@
 
 ## General information
 
-Output based on (tltk)[https://pypi.org/project/tltk/]
+Output based on [tltk](https://pypi.org/project/tltk/)
 
 ## Deployed on uberspace
 
