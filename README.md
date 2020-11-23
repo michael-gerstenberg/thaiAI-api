@@ -11,7 +11,7 @@
    ```sh
    $ virtualenv -p python3 ENV
    $ source ENV/bin/activate
-   $ pip install requirements.txt
+   $ pip install -r requirements.txt
    ```
 3. set port in nginx
    ```sh
