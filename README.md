@@ -12,17 +12,24 @@
    ```
 2. setup and activate python environment, install required packages
    ```sh
+   $ cd thaiAI-api
    $ virtualenv -p python3 ENV
    $ source ENV/bin/activate
-   $ pip install -r requirements.txt
+   $ pip install flask tltk uWSGI
    ```
 3. set port in nginx
    ```sh
    $ uberspace web backend set / --http --port 1024
    ```
-4. setup daemon (refresh supvervisord config)
+4. create ```~/etc/services.d/flask.ini```
    ```sh
-   $ supervisorctl restart flask
+   [program:flask]
+   directory=%(ENV_HOME)s/thaiAI-api
+   command=%(ENV_HOME)s/thaiAI-api/ENV/bin/uwsgi uwsgi.ini
+   ```
+5. setup daemon (refresh supvervisord config)
+   ```sh
+   $ supervisorctl reread
    $ supervisorctl update
    ```
 
