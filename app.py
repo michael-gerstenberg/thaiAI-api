@@ -4,7 +4,6 @@ import json
 from flask import Flask
 from flask import render_template, request
 from tltk import nlp
-from flask_json import json_response
 
 app = Flask(__name__)
 
